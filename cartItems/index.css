@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f6f1df;
+    padding: 18px 40px 14px;
+}
+
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section img {
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.middle-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botique-name {
+    height: 48px;
+}
+
+
+.right-section {
+    display: flex;
+    gap: 18px;
+}
+
+.right-section img {
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    width: 100%;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 4px;
+}
+.Item1,
+.Item2,
+.Item3,
+.Item4{
+    width:300px;
+    height:300px;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sakya{
+    font-size: 28px;
+    font-style: initial;
+    color: rgb(90, 152, 90);
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.item p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(90, 152, 90);
+}
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.item span {
+    display: block;
+    margin-top: 18px;
+    font-size: 18px;
+    color: #4a6b57;
+    cursor: pointer;
+}
+.item {
+    text-align: left;
+
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.clothes {
+    background-color: white;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-family: "Georgia", serif;
+}
+.clothes2{
+    background-color: #f6f1df;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-family: "Georgia", serif;
+}
+.sorted{
+    font-size: 28px;
+    font-style: initial;
+    color: rgba(46, 40, 32, 0.892);
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+.item_1 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgba(46, 40, 32, 0.892);
+}
+.item_1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sakya-container {
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 50px;
+    display: flex;         
+    width: 100%;
+}
+
+.image-div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-div {
+    width: 50%;
+    background-color: #4f6f5b;
+    padding: 60px;
+    color: #f5f2eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-div h3 {
+    font-family: serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text-div p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.text-div button {
+    width: fit-content;
+    padding: 12px 28px;
+    border: none;
+    background-color: #f5f2eb;
+    color: #4f6f5b;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.footer{
+    background-color: #4f6f5b;
+    text-align: center;
+    margin-top: 100px;
+    height: 250px;
+}
+.foot1{
+    color: beige;
+}
+.foot1 h2{
+    font-weight: 100;
+    padding-top: 50px;
+}
+.foot1 p{
+    font-size: 18px;
+    padding-top: 30px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid #cfcabf;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.subscribe-form input {
+  flex: 1;
+  padding: 16px 18px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f4f1eb;
+}
+
+.subscribe-form input::placeholder {
+  color: #d6d2c7;
+}
+.subscribe-form button {
+  background: transparent;
+  border: none;
+  padding: 0 18px;
+  font-size: 20px;
+  color: #f4f1eb;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.subscribe-form button:hover {
+  transform: translateX(4px);
+}
+.foot2{
+    background-color: #25332b;
+    height: 150px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon_image{
+    width:20px;
+}
